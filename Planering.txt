@@ -1,0 +1,2 @@
+En fil för varje klass
+Varje rum har sin egna fil/klass
