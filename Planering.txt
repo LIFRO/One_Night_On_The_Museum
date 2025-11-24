@@ -1,6 +1,13 @@
 En fil för varje klass
 Varje rum har sin egna fil/klass
 Använd grunläggande C# konventioner
+
+
+Rummen får sina egna array för artworks
+Varje rume har sin metod för när man kommer in i rummet
+Håller koll på vart varje rum ligger via en gridded array
+
+
 I varje rum ska ha sina egna konstverk
 Vita rummet: ett (1) konstverk
 Svarta rummet: inga (0) konstverk
@@ -10,3 +17,7 @@ Röda rummet: tre (3) konstverk
 Gröna rummet: två (2) konstverk
 Korridoren: inga (0) konstverk
 Entrén: inga (0) konstverk
+
+Man ska kunna välja om man vilj se konstverk eller gå vidare
+om det är tomt finns det inget val att kolla på konstverk och det automatiskt säger att rummet är wip
+
