@@ -1,2 +1,12 @@
 En fil för varje klass
 Varje rum har sin egna fil/klass
+Använd grunläggande C# konventioner
+I varje rum ska ha sina egna konstverk
+Vita rummet: ett (1) konstverk
+Svarta rummet: inga (0) konstverk
+Lila rummet: fyra (4) konstverk
+Blåa rummet: ett (1) konstverk
+Röda rummet: tre (3) konstverk
+Gröna rummet: två (2) konstverk
+Korridoren: inga (0) konstverk
+Entrén: inga (0) konstverk
