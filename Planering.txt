@@ -21,3 +21,12 @@ Entrén: inga (0) konstverk
 Man ska kunna välja om man vilj se konstverk eller gå vidare
 om det är tomt finns det inget val att kolla på konstverk och det automatiskt säger att rummet är wip
 
+Default kordinat system:
+Entre = 0,3;
+Corridor = 1,3;
+GreenRoom = 2,3;
+BlueRoom = 3,3;
+BlackRoom = 4,3;
+RedRoom = 2,4;
+PurpleRoom = 3,4;
+WhiteRoom 3,2;
