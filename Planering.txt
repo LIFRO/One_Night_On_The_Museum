@@ -30,3 +30,13 @@ BlackRoom = 4,3;
 RedRoom = 2,4;
 PurpleRoom = 3,4;
 WhiteRoom 3,2;
+
+
+Entre = E1
+Corridor C1
+GreenROom = GR1
+BlueRoom = BR1
+BlackRoom = BR2
+RedRoom = RB1
+PurpleRoom = PR1
+WhiteRoom = WR1
