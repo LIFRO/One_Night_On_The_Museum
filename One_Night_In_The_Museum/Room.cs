@@ -1,15 +1,10 @@
-class room
+class Room
 {
-    Artwork[] artworks;
-    string name;
-    int gridRow;
-    int gridCollumn;
-    
-    public room(Artwork[] artworks, string name, int gridRow, int gridCollumn)
-    {
-        this.artworks = artworks;
-        this.name = name;
-        this.gridRow = gridRow;
-        this.gridCollumn = gridCollumn;
-    }
+    public required Artwork[] artworks;
+    public required string name;
+    public required int gridRow;
+    public required int gridCollumn;
+    public required string id;
+
+    public Room() { }
 }

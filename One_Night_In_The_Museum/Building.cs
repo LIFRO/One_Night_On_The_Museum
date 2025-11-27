@@ -1,8 +1,8 @@
-class building()
+class Building()
 {
-    string[,] grid = new string[8, 8];
+    public string[,] grid = new string[8, 8];
     
-    void  MoveItem(string[,] grid, int FromRow, int FromColumn, int ToRow, int ToColumn)
+    public void MoveItem(int FromRow, int FromColumn, int ToRow, int ToColumn)
     {
         grid[ToRow, ToColumn] = grid[FromRow, FromColumn];
         grid[FromRow, FromColumn] = null;

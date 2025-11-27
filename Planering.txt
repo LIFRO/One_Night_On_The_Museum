@@ -34,7 +34,7 @@ WhiteRoom 3,2;
 
 Entre = E1
 Corridor C1
-GreenROom = GR1
+GreenRoom = GR1
 BlueRoom = BR1
 BlackRoom = BR2
 RedRoom = RB1
