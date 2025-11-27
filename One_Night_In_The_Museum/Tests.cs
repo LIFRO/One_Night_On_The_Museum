@@ -28,10 +28,61 @@ class testGrid
         }
 
     }
-    static string ArtworkContainer()
+
+    static void ArtworkContainer(Artwork[] CentralArtworks)
     {
-        
+        int i = 0;
+        foreach (Artwork artwork in CentralArtworks)
+        {
+            i++;
+            if(!string.IsNullOrEmpty(artwork.title))
+            {
+                Console.WriteLine($"Artwork {i} Contains everything necessary.\n Artwork check {i}: Succes");
+            }
+            else
+            {
+            ErrorMEssage(i); 
+            }
+        }
+                foreach (Artwork artwork in CentralArtworks)
+        {
+            i++;
+            if(!string.IsNullOrEmpty(artwork.description))
+            {
+                Console.WriteLine($"Artwork {i} Contains everything necessary.\n Artwork check {i}: Succes");
+            }
+            else
+            {
+            ErrorMEssage(i); 
+            }
+        }
+                foreach (Artwork artwork in CentralArtworks)
+        {
+            i++;
+            if(!string.IsNullOrEmpty(artwork.artist))
+            {
+                Console.WriteLine($"Artwork {i} Contains everything necessary.\n Artwork check {i}: Succes");
+            }
+            else
+            {
+            ErrorMEssage(i); 
+            }
+        }
     }
+    
+    static void ErrorMEssage(int i)
+    {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("ERROR");
+                Console.ResetColor();
+
+                Console.WriteLine($"Artwork check {i} Failure");
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("ERROR");
+                Console.ResetColor();
+    }
+
     static void GridMovementTest(Building building)
     {
         Random r = new Random();

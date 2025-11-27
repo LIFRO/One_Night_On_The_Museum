@@ -1,8 +1,8 @@
 class Artwork
 {
-    private string title;
-    private string description;
-    private string artist;
+    public string title;
+    public string description;
+    public string artist;
 
 public Artwork(string title,  string description, string artist)
     {
