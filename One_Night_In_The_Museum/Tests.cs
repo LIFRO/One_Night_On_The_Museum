@@ -35,7 +35,7 @@ class testGrid
     static void GridMovementTest(Building building)
     {
         Random r = new Random();
-        Room[] roomIds = [E1, C1, GR1, BR1, BR2, RB1, PR1, WR1];
+        Room[] roomIds = new Room[] {E1, C1, GR1, BR1, BR2, RB1, PR1, WR1};
         Room chosenRoom = roomIds[r.Next(roomIds.Length)];
         int testCords = 0;
         string[,] grid = building.grid; 
