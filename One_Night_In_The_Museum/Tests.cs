@@ -1,8 +1,9 @@
-class testGrid
+class Tests
 {
-    static string testGridMethod()
+    static string TestGridMethod()
     {
         int x = 0;
+        int y = 0;
         foreach (string room in roomArray)
         {
             bool roomExists = false;
@@ -10,9 +11,17 @@ class testGrid
             {
                 for (int j = 0; j < 8; j++)
                 {
-                    if (roomArray[i,j].roomId == grid[i,j].id)
+                    if (room.roomId == grid[i,j].id)
                     {
                         roomExists = true;
+                        if (room.roomCoord == [i, j])
+                        {
+                            return;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Rummet {room.id} ligger inte på rätt plats. Det förväntas ligga på {[i,j]}, men ligger på {room.roomCoord}.");
+                        }
                     }
                 }
             }
@@ -21,12 +30,14 @@ class testGrid
                 x++;
             }
         }
-
-        if (x > 0)
+        if (x == 1)
         {
-            Console.WriteLine($"Error: {x} room(s) are missing from the building. Exit the application.");//Check fails: Some room doesn't exist.
+            Console.WriteLine($"Error: 1 room is missing from the building. Press any key to exit the application.");//Check fails: Some room doesn't exist.
         }
-
+        else if (x > 1)
+        {
+            Console.WriteLine($"Error: {x} rooms are missing from the building. Press any key to exit the application.");//Check fails, but for more than one room missing.
+        }
     }
 
     static void ArtworkContainer(Artwork[] CentralArtworks)
