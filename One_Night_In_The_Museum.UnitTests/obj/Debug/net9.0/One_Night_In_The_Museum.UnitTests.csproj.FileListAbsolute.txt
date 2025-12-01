@@ -1,0 +1,8 @@
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_One_Night_In_The_Museum.UnitTests
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\bin\Debug\net9.0\CoverletSourceRootsMapping_One_Night_In_The_Museum.UnitTests
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.csproj.AssemblyReference.cache
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.AssemblyInfoInputs.cache
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.AssemblyInfo.cs
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum.UnitTests\obj\Debug\net9.0\One_Night_In_The_Museum.UnitTests.sourcelink.json
