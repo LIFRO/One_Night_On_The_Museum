@@ -1,0 +1,5 @@
+C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\obj\Debug\net9.0\One_Night_In_The_Museum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\obj\Debug\net9.0\One_Night_In_The_Museum.AssemblyInfoInputs.cache
+C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\obj\Debug\net9.0\One_Night_In_The_Museum.AssemblyInfo.cs
+C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\obj\Debug\net9.0\One_Night_In_The_Museum.csproj.CoreCompileInputs.cache
+C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\obj\Debug\net9.0\One_Night_In_The_Museum.sourcelink.json

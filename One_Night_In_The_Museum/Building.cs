@@ -1,4 +1,4 @@
-class Building()
+public class Building()
 {
     public string[,] grid = new string[8, 8];
     
