@@ -1,6 +1,6 @@
 public class Building()
 {
-    public string[,] grid = new string[8, 8];
+    public Room[,] grid = new Room[8, 8];
     
     public void MoveItem(int FromRow, int FromColumn, int ToRow, int ToColumn)
     {
