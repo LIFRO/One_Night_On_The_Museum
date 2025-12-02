@@ -1,12 +1,19 @@
 public class Room
 {
-    public required Artwork[] artworks;
-    public required string name;
-    public required int gridRow;
-    public required int gridCollumn;
-    public required string id;
+    public Artwork[] artworks;
+    public string name;
+    public int gridRow;
+    public int gridCollumn;
+    public string id;
 
-    public Room() { }
+    public Room(Artwork[]? artworks, string name, int row, int col, string id)
+    {
+    this.artworks = artworks ?? Array.Empty<Artwork>();
+    this.name = name;
+    this.gridRow = row;
+    this.gridCollumn = col;
+    this.id = id;
+    }
 
     public void RoomPlace(Building Building, int Row, int Collumn)
     {
@@ -14,11 +21,15 @@ public class Room
         cordsearch(Building);
     }
 
+    public void Entered()
+    {
+        Console.WriteLine("");
+    }
     public void cordsearch(Building Building)
     {
         for (int r = 0; r < Building.grid.GetLength(0); r++)
         {
-            for (int c = 0; r < Building.grid.GetLength(1); c++)
+            for (int c = 0; c < Building.grid.GetLength(1); c++)
             {
                 if (Building.grid[r,c] == this)
                 {

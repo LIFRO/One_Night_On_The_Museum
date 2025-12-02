@@ -1,4 +1,4 @@
-class Artwork
+public class Artwork
 {
     public string title;
     public string description;

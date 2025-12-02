@@ -16,4 +16,13 @@ public class MoveItemTests
         Assert.Equal("test", building.grid[0,0]);
         Assert.Null(building.grid[7,7]);
     }
+
+    [Fact]
+
+    public void ArtworkTest()
+    {
+        Artwork artwork = new Artwork("Monalisa", "asdjnashidb", "MoanaLisa");
+    }
+
 }
+
