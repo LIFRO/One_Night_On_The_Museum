@@ -17,3 +17,4 @@ public class MoveItemTests
         Assert.Null(building.grid[7,7]);
     }
 }
+
