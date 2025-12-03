@@ -3,8 +3,12 @@
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public void ArtworkCreationTest()
     {
+        var artwork = new Artwork() {Title = "MonaLisa", Artist = "Da Vinci", Description = "Cute Smile"};
+        Assert.Equal("MonaLisa", artwork.Title);
+        Assert.Equal("Da Vinci", artwork.Artist);
+        Assert.Equal("Cute Smile", artwork.Description);
 
     }
 }
