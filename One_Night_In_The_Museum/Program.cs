@@ -9,6 +9,22 @@ Room RB1 = new Room(null, "Red Room", 2, 4, "RB1", Building);
 Room PR1 = new Room(null, "Purple Room", 3, 4, "PR1", Building);
 Room WR1 = new Room(null, "White Room", 3, 2, "WR1", Building);
 
+/*Entre = E1
+Corridor C1
+GreenRoom = GR1
+BlueRoom = BR1
+BlackRoom = BR2
+RedRoom = RB1
+PurpleRoom = PR1
+WhiteRoom = WR1*/
+
+ArtworkList.ArtworkAdd(WR1, 0, 1);
+ArtworkList.ArtworkAdd(PR1, 1, 4);
+ArtworkList.ArtworkAdd(BR1, 5, 1);
+ArtworkList.ArtworkAdd(RB1, 6, 3);
+ArtworkList.ArtworkAdd(GR1, 9, 2);
+
+
 Room[] Rooms = new Room[]{E1, C1, GR1, BR1, BR2, RB1, PR1, WR1};
 
 foreach(Room room in Rooms)
