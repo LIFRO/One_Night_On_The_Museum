@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net9.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
@@ -8,7 +10,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = One_Night_In_The_Museum
-build_property.ProjectDir = C:\Users\linuz\Documents\Skola yrkeshögskola\C#\One_Night_In_The_Museum\One_Night_In_The_Museum\
+build_property.ProjectDir = c:\Users\super\Programmering\Webbutveckling.NET\objektorienterad csharp\museum\One_Night_On_The_Museum\One_Night_In_The_Museum\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
