@@ -40,5 +40,3 @@ BlackRoom = BR2
 RedRoom = RB1
 PurpleRoom = PR1
 WhiteRoom = WR1
-8
-
