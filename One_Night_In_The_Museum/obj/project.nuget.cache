@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MJMgpRtIrzU=",
+  "dgSpecHash": "YUtCCWTtUj0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\super\\Programmering\\Webbutveckling.NET\\objektorienterad csharp\\museum\\One_Night_On_The_Museum\\One_Night_In_The_Museum\\One_Night_In_The_Museum.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\super\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
-    "C:\\Users\\super\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",
-    "C:\\Users\\super\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.11\\microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
-    "C:\\Users\\super\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.11\\microsoft.netcore.app.host.win-x64.9.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\linuz\\Documents\\Skola yrkeshögskola\\C#\\One_Night_In_The_Museum\\One_Night_In_The_Museum\\One_Night_In_The_Museum.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
