@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-//using One_Night_In_The_Museum;
->>>>>>> 86af129222fc10c2bdfe2af817141d287b1cb602
-
 public static class ArtworkList{
         public static Artwork[] CentralArtworks = new Artwork[]
         {
@@ -21,11 +16,7 @@ public static class ArtworkList{
 
         public static void ArtworkAdd(Room room, int startIndex, int count)
         {
-<<<<<<< HEAD
                 var ArtworksArray = CentralArtworks.Skip(startIndex).Take(count).ToArray();
-=======
-                var ArtworksArray = ArtworkList.CentralArtworks.Skip(startIndex).Take(count).ToArray();
->>>>>>> 86af129222fc10c2bdfe2af817141d287b1cb602
                 foreach(Artwork artwork in ArtworksArray)
                 {
                         room.artworks.Add(artwork);
