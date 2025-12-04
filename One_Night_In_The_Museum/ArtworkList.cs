@@ -1,4 +1,4 @@
-using One_Night_In_The_Museum;
+//using One_Night_In_The_Museum;
 
 public static class ArtworkList{
         public static Artwork[] CentralArtworks = new Artwork[]
@@ -19,7 +19,7 @@ public static class ArtworkList{
         public static void ArtworkAdd(Room room, int startIndex, int count)
         {
                 var ArtworksArray = ArtworkList.CentralArtworks.Skip(startIndex).Take(count).ToArray();
-                foreach(Artwork artwork in PRArtworksArray)
+                foreach(Artwork artwork in ArtworksArray)
                 {
                         room.artworks.Add(artwork);
                 }

@@ -102,17 +102,17 @@ class Tests
         int testCords = 0;
         string[,] grid = building.grid; 
         int targetx = chosenRoom.gridRow;
-        int targety = chosenRoom.gridcolumn;
+        int targety = chosenRoom.gridColumn;
         int gridRow = chosenRoom.gridRow;
-        int gridcolumn = chosenRoom.gridcolumn;
+        int gridColumn = chosenRoom.gridColumn;
 
-        building.MoveItem(gridRow, gridcolumn, testCords, testCords);
+        building.MoveItem(gridRow, gridColumn, testCords, testCords);
         string sucess = GridChecks(grid, testCords, testCords);
         if(sucess == "Failure")
         {
             Environment.Exit(0);
         }
-        building.MoveItem( testCords, testCords, gridRow, gridcolumn);
+        building.MoveItem( testCords, testCords, gridRow, gridColumn);
         sucess =  GridChecks(grid, targetx, targety);
         if(sucess == "Failure")
         {

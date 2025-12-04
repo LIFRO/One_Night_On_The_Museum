@@ -7,7 +7,7 @@ Room BR1 = new Room("Blue Room", 3, 3, "BR1", Building);
 Room BR2 = new Room("Black Room", 4, 3, "BR2", Building);
 Room RB1 = new Room("Red Room", 2, 4, "RB1", Building);
 Room PR1 = new Room("Purple Room", 3, 4, "PR1", Building);
-Room WR1 = new Room("White Room", 3, 2, "WR1", Building);
+Room WR1 = new Room( "White Room", 3, 2, "WR1", Building);
 
 /*Entre = E1
 Corridor C1
@@ -29,7 +29,7 @@ Room[] Rooms = new Room[]{E1, C1, GR1, BR1, BR2, RB1, PR1, WR1};
 
 foreach(Room room in Rooms)
 {
-    Building.AddToGrid(room.gridRow, room.gridcolumn, room);
+    Building.AddToGrid(room.gridRow, room.gridColumn, room);
 }
 
 /*Building.AddToGrid(0, 3, E1);*/
