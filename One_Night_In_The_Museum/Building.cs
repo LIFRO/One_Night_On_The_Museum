@@ -1,7 +1,7 @@
 
 public class Building()
 {
-    public Room[,] grid = new Room[2, 2];
+    public Room[,] grid = new Room[7, 7];
     
     public void AddToGrid(int row, int column, Room room)
     {
