@@ -23,17 +23,16 @@ public class Room
     private void ChoiceIfNoArtworks()
     {
         bool menuloop = true;
-        Console.Write($"Welcome to the {name}! There are no artworks here. Do you want to visit another room or start over?");
+        Console.WriteLine($"Welcome to the {name}! There are no artworks here. Do you want to visit another room or start over?");
         Console.WriteLine("[1] Visit another room");
-        Console.WriteLine("[2] Go back to the entrance.");
+        Console.WriteLine("[2] Go out of the museum");
 
         while(menuloop == true){
         bool userInput = Int32.TryParse(Console.ReadLine(), out int choice);
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("Which room do you want to visit?");
-                    //Room list, move option
+                    PlayerMovement();
                     Console.WriteLine("Press any key to continue.");
                     Console.ReadKey();
                     menuloop = false;
@@ -47,17 +46,17 @@ public class Room
                     break;
 
                 default:
-                    Console.Write("Invalid choice, please try again!");
+                    Console.WriteLine("Invalid choice, please try again!");
                     break;
             }  
         }  
     }
     private void ChoiceIfYesArtworks() {
         bool menuloop = true;
-        Console.WriteLine($"Welcome to the {name}! There are {artworks.Count} here. Do you want to check them out, visit another room or start over?");
+        Console.WriteLine($"Welcome to the {name}! There are {artworks.Count} artworks here. Do you want to check them out, visit another room or start over?");
         Console.WriteLine("[1] Check out artworks");
         Console.WriteLine("[2] Visit another room");
-        Console.WriteLine("[3] Start over");
+        Console.WriteLine("[3] Exit the museum");
         List<Room?> Adjacent = CheckAdjacent();
         while(menuloop == true){
             bool userInput = Int32.TryParse(Console.ReadLine(), out int choice);
@@ -65,12 +64,25 @@ public class Room
             {
                 case 1:
                     Console.WriteLine("These artworks hang in this room. How neat!");
+                    int i = 0;
                     foreach (Artwork artpiece in artworks)
                     {
-                        Console.WriteLine(artpiece);
+                        i++;
+                        Console.WriteLine($"[{i}] {artpiece.Title}");
                     }
-                    Console.WriteLine("Press any key to continue.");
+                    string? line = Console.ReadLine();
+                    if (!string.IsNullOrEmpty(line) && int.TryParse(line, out int input))
+                    {
+                        Artwork a= artworks[input - 1];
+                        Console.WriteLine($"{a.Title} \n {a.Description} \n {a.Artist}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid choice!");
+                    }
+                    Console.WriteLine($"Press any key to go back to {name}.");
                     Console.ReadKey();
+                    ChoiceIfYesArtworks();
                     menuloop = false;
                     break;
 
@@ -94,13 +106,13 @@ public class Room
     }   
     public void PlayerMovement()
     {
-    Console.Write("Which room do you want to visit?");
+        Console.WriteLine("Which room do you want to visit?");
         //print adjacent rooms
         List<Room?> Rooms = CheckAdjacent();
-        foreach (Room ?room in Rooms )
+        int i = 1;
+        foreach (Room room in Rooms )
         {
-            int i = 1;
-            Console.WriteLine($"{i}{room}");
+            Console.WriteLine($"[{i}]{room.name}");
             i++;
         }
         int input = Int32.Parse(Console.ReadLine());
@@ -111,39 +123,11 @@ public class Room
         }
         else
         {
-            Console.Write("Invalid choice, please try again!");
+            Console.WriteLine("Invalid choice, please try again!");
         }
-//        else 
-//        {
-//            Console.Write("Invalid choice, please try again!");
-//        }
-
-
-//    Console.Write("Which room do you want to visit?");
-//        //print adjacent rooms
-//        for (int i = 0; i < Rooms.Length; i++)
-//        {
-//            Console.WriteLine($"{i + 1}. {Rooms[i]}");
-//        }
-//
-//        int moveInput;
-//        string? input = Console.ReadLine();
-//        //player choice
-//        if (int.TryParse(input, out moveInput) && moveInput >= 1 && moveInput <= Rooms.Length)
-//        {
-//            int roomIndex = moveInput - 1;
-//            var roomChoice = Rooms[roomIndex];
-//            Console.WriteLine($"You walk into the {roomChoice}");                   
-//        }
-//        else 
-//        {
-//            Console.Write("Invalid choice, please try again!");
-//        }
     }
     public void Entered() {
-        List<Room?> adjacents = CheckAdjacent();
-
-        if (this.artworks == null) {
+        if (this.artworks == null || this.artworks.Count == 0) {
             ChoiceIfNoArtworks();   
         }
         else {
@@ -170,19 +154,19 @@ public class Room
         int rows = Building.grid.GetLength(0);
         int collum = Building.grid.GetLength(1);
 
-        if (Building.grid[this.gridRow + 1, this.gridColumn] != null)
+        if (this.gridRow + 1 < rows && Building.grid[this.gridRow + 1, this.gridColumn] != null)
         {
             adjacents.Add(Building.grid[this.gridRow + 1, this.gridColumn]);
         }
-        if (this.gridRow - 1 >= rows && (Building.grid[this.gridRow - 1, this.gridColumn] != null))
+        if (this.gridRow - 1 >= 0 && (Building.grid[this.gridRow - 1, this.gridColumn] != null))
         {
             adjacents.Add(Building.grid[this.gridRow - 1, this.gridColumn]);
         }
-        if (Building.grid[this.gridRow, this.gridColumn + 1] != null)
+        if (this.gridColumn + 1 < collum && Building.grid[this.gridRow, this.gridColumn + 1] != null)
         {
             adjacents.Add(Building.grid[this.gridRow, this.gridColumn + 1]);
         }
-        if ((this.gridColumn != 0 && Building.grid[this.gridRow, this.gridColumn - 1] != null))
+        if (this.gridColumn - 1 >= 0 && Building.grid[this.gridRow, this.gridColumn - 1] != null)
         {
             adjacents.Add(Building.grid[this.gridRow, this.gridColumn - 1]);
         }

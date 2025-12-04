@@ -9,7 +9,7 @@ public class MoveItemTests
     public void MoveItemTest()
     {
         Building building = new Building();
-        Room Test = new Room(null, "Test", 7, 7, "T1", building);
+        Room Test = new Room("Test", 7, 7, "T1", building);
 
         building.AddToGrid(Test.gridRow, Test.gridColumn, Test);
         building.MoveItem(7, 7, 0, 0);

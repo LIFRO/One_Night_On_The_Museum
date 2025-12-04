@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("One_Night_In_The_Museum.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86af129222fc10c2bdfe2af817141d287b1cb602")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c31e4b0db63b6fd101bf16ba3be4218bb60eeba")]
 [assembly: System.Reflection.AssemblyProductAttribute("One_Night_In_The_Museum.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("One_Night_In_The_Museum.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

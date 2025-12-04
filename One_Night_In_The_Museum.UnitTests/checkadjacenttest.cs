@@ -2,8 +2,8 @@ namespace One_Night_In_The_Museum.UnitTests;
 
 public class UnitTest2
 {
-     [Fact]
-     public void Checkadjacent_ReturnAdjacent()
+    [Fact]
+    public void Checkadjacent_ReturnAdjacent()
     {
         Building building = new Building();
         building.grid = new Room[3, 3];
