@@ -120,7 +120,7 @@ public class Room
     public void Entered() {
         List<Room> adjacents = CheckAdjacent();
 
-        if (this.artworks == null) {
+        if (this.artworks == null || this.artworks.Count == 0) {
             ChoiceIfNoArtworks();   
         }
         else {
