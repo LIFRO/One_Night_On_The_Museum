@@ -17,11 +17,11 @@ public static class ArtworkList{
         };
 
         public static void ArtworkAdd(Room room, int startIndex, int count)
-    {
-        var ArtworksArray = ArtworkList.CentralArtworks.Skip(startIndex).Take(count).ToArray();
-        foreach(Artwork artwork in PRArtworksArray)
         {
-                room.artworks.Add(artwork);
+                var ArtworksArray = ArtworkList.CentralArtworks.Skip(startIndex).Take(count).ToArray();
+                foreach(Artwork artwork in PRArtworksArray)
+                {
+                        room.artworks.Add(artwork);
+                }
         }
-    }
 };

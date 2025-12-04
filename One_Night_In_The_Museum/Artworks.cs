@@ -1,6 +1,6 @@
 public class Artwork
 {
-    public required string Title {get; set;}
-    public required string Artist {get; set;}
-    public required string Description {get; set;}
+    public required string title {get; init;}
+    public required string artist {get; init;}
+    public required string description {get; init;}
 }
