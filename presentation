@@ -1,0 +1,23 @@
+Inkapsling (Encapsulation)
+
+Ni har grupperat relaterad data och funktionalitet i klasser. T.ex. Room-klassen innehåller både rumdata (name, gridRow, artworks) och metoderna som arbetar med denna data (Entered, CheckAdjacent, PlayerMovement)
+Building-klassen kapslar in grid-strukturen och metoderna för att manipulera den
+
+Abstraktion
+
+Ni döljer komplex logik bakom enkla metodnamn. T.ex. Entered() hanterar all menylogik internt utan att anroparen behöver veta detaljerna
+ArtworkList.ArtworkAdd() förenklar processen att lägga till konstverk - användaren behöver inte veta hur Skip/Take fungerar
+
+Komposition
+
+Room innehåller en lista av Artwork-objekt (List<Artwork>)
+Room har en referens till sitt Building-objekt
+Detta skapar "has-a" relationer (ett rum HAR konstverk, ett rum HAR en byggnad)
+
+Separation of Concerns
+
+Olika klasser har olika ansvarsområden: Building hanterar grid-strukturen, Room hanterar rumlogik och spelarinteraktion, Artwork representerar konstverksdata, ArtworkList hanterar konstverkssamlingen
+
+Static Class Usage
+
+ArtworkList är en statisk klass som fungerar som en utility/helper class för att hantera konstverksdata centralt
